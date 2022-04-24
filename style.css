@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .container{
     display: grid;
     grid-template-columns: 12rem 28rem 28rem 12rem;
