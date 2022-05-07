@@ -1,0 +1,15 @@
+@media only screen and (max-width: 62.5em) {
+  .navigation2 {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+}
+
+@media only screen and (max-width: 37.5em) {
+}
