@@ -1,4 +1,9 @@
 @media only screen and (max-width: 62.5em) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
   .navigation2 {
     display: none;
   }
@@ -29,6 +34,10 @@
     margin-left: 8rem;
     transform: scaleX(1) scaleY(1);
     margin-top: 30rem;
+    -webkit-transform: scaleX(1) scaleY(1);
+    -moz-transform: scaleX(1) scaleY(1);
+    -ms-transform: scaleX(1) scaleY(1);
+    -o-transform: scaleX(1) scaleY(1);
   }
 
   .image__rating {
@@ -425,6 +434,24 @@
     right: 1.7rem;
   }
 
+  .container {
+    grid-template-columns: minmax(0.5rem, 12rem) 20rem 28rem minmax(
+        0.5rem,
+        12rem
+      );
+    grid-template-rows: 4rem 4rem 27rem 6rem;
+  }
+
+  .rating__image {
+    width: 1.3rem;
+    padding-left: 0.5rem;
+  }
+
+  .rating__image-1 {
+    width: 1.7rem;
+    padding-left: 0.5rem;
+  }
+
   .story {
     grid-column: 1/3;
     grid-row: 3/4;
@@ -447,13 +474,34 @@
   }
 
   .section__1 {
-    grid-template-columns: minmax(0.5rem, 12rem) 25rem minmax(0.5rem, 12rem);
+    grid-template-columns: minmax(0.1rem, 12rem) minmax(21rem, 25rem) minmax(
+        0.1rem,
+        12rem
+      );
     grid-template-rows: 4rem 1rem 32rem 27rem 2rem;
+  }
+
+  .heading__2 {
+    font-size: 1.2rem;
+    width: 70%;
+  }
+
+  .heading__h3 {
+    font-size: 2.5rem;
+    width: 110%;
+  }
+
+  .section__2 {
+    grid-template-columns: minmax(0.5rem, 12rem) 20rem minmax(0.5rem, 12rem);
+    grid-template-rows: 4rem 17rem 25rem;
   }
 
   .section__3 {
     grid-template-rows: 5rem 15rem 32rem 8rem;
-    grid-template-columns: minmax(0.5rem, 10rem) 22rem minmax(0.5rem, 10rem);
+    grid-template-columns: minmax(0.1rem, 10rem) minmax(19rem, 22rem) minmax(
+        0.1rem,
+        10rem
+      );
   }
 
   .heading__services {
@@ -461,12 +509,18 @@
     width: 86%;
     margin-left: 1rem;
     margin-top: 0.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .mb-sm {
+    margin-top: 0rem;
+    margin-bottom: -13rem;
   }
 
   .section__4 {
     display: grid;
-    grid-template-rows: 22rem min-content;
-    grid-template-columns: 3rem 19rem 5rem 6rem;
+    grid-template-rows: 22rem min-content min-content;
+    grid-template-columns: 2rem 16rem 5rem 6rem;
   }
 
   .cars__experience {
@@ -478,28 +532,28 @@
 
   .review__heading,
   .review__paragraph {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .cars__review {
     align-items: center;
-    padding-right: 0.65rem;
+    padding-right: 1.3rem;
   }
 
   .section__5 {
     grid-template-rows: 10rem 15rem 2rem;
-    grid-template-columns: minmax(0.5rem, 10rem) 23rem minmax(0.5rem, 10rem);
+    grid-template-columns: minmax(0.1rem, 10rem) 20rem minmax(0.1rem, 10rem);
   }
 
   .brands__pix {
-    width: 7rem;
+    width: 6rem;
   }
 
   .section__6 {
     background-color: #f2f2f2;
     display: grid;
     grid-template-rows: 15rem 28rem 6rem 4rem;
-    grid-template-columns: minmax(1rem, 10rem) 44rem minmax(0.5rem, 10rem);
+    grid-template-columns: minmax(0.1rem, 10rem) 38rem minmax(0.1rem, 10rem);
   }
 
   .testimonial__line {
@@ -507,19 +561,42 @@
     padding-right: 5rem;
   }
 
+  .testimonial__right2 {
+    width: 2.1rem;
+  }
+
   .testimonial__carousel {
-    margin-top: 1rem;
+    margin-top: 4.5rem;
   }
 
   .section__7 {
-    grid-template-rows: 8rem 35rem;
-    grid-template-columns: minmax(0.5rem, 19rem) minmax(20rem, 30rem) minmax(
-        0.5rem,
+    grid-template-rows: 8rem 37rem;
+    grid-template-columns: minmax(0.1rem, 19rem) minmax(18rem, 30rem) minmax(
+        0.1rem,
         19rem
       );
   }
 
   .questions__heading-big {
     margin-left: 2rem;
+  }
+
+  .footer {
+    grid-template-columns:
+      minmax(0.1rem, 9rem) minmax(13rem, 30rem) minmax(13rem, 30rem)
+      minmax(0.1rem, 9rem);
+    grid-template-rows: 6rem 15rem 15rem 6rem;
+  }
+
+  .footer__services {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    padding-left: 1rem;
+  }
+
+  .footer__helpline {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    padding-left: 1rem;
   }
 }

@@ -1,4 +1,9 @@
 @media only screen and (max-width: 62.5em) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
   .navigation2 {
     display: none;
   }
@@ -6,10 +11,149 @@
   .navigation {
     display: block;
   }
+
+  .navigation__image {
+    left: 2rem;
+    top: 40rem;
+    font-size: 1rem;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: minmax(0.5rem, 9rem) 20rem 20rem minmax(0.5rem, 9rem);
+    grid-template-rows: 6rem 18rem 6rem;
+  }
 }
 
 @media only screen and (max-width: 50em) {
+  .footer {
+    grid-template-columns:
+      minmax(0.5rem, 9rem) minmax(19rem, 30rem) minmax(19rem, 30rem)
+      minmax(0.5rem, 9rem);
+    grid-template-rows: 6rem 18rem 6rem;
+    grid-column-gap: 2rem;
+  }
+  .navigation__heading {
+    left: 1rem;
+    top: 1rem;
+  }
+
+  .navigation__image {
+    left: 2rem;
+    top: 40rem;
+    font-size: 1rem;
+  }
+
+  .navigation__button {
+    height: 3.5rem;
+    width: 3.5rem;
+    top: 2.5rem;
+    right: 2.5rem;
+  }
+
+  .navigation__background {
+    height: 3rem;
+    width: 3rem;
+    top: 2.7rem;
+    right: 2.7rem;
+  }
+
+  .navigation__icon {
+    position: relative;
+    margin-top: 1.7rem;
+  }
+
+  .navigation__icon::before {
+    top: -0.7rem;
+  }
+
+  .navigation__icon::after {
+    top: 0.7rem;
+  }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 43.75em) {
+  .navigation__link:link,
+  .navigation__link:visited {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .navigation__image {
+    left: 2rem;
+    top: 40rem;
+    font-size: 0.9rem;
+  }
+
+  .navigation__img {
+    width: 2rem;
+  }
+
+  .footer {
+    grid-template-columns:
+      minmax(0.5rem, 9rem) minmax(15rem, 30rem) minmax(15rem, 30rem)
+      minmax(0.5rem, 9rem);
+    grid-template-rows: 6rem 15rem 15rem 6rem;
+  }
+
+  .footer__services {
+    grid-column: 2/-1;
+    grid-row: 2/3;
+  }
+
+  .footer__helpline {
+    grid-column: 2/-1;
+    grid-row: 3/4;
+  }
+
+  .footer__bottom {
+    grid-row: 4/5;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .navigation__button {
+    height: 3.5rem;
+    width: 3.5rem;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .navigation__icon,
+  .navigation__icon::before,
+  .navigation__icon::after {
+    width: 1.5rem;
+    height: 2px;
+  }
+
+  .navigation__background {
+    height: 2rem;
+    width: 2rem;
+    top: 1.7rem;
+    right: 1.7rem;
+  }
+
+  .footer {
+    grid-template-columns:
+      minmax(0.1rem, 9rem) minmax(13rem, 30rem) minmax(13rem, 30rem)
+      minmax(0.1rem, 9rem);
+    grid-template-rows: 6rem 15rem 15rem 6rem;
+  }
+
+  .footer__services {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    padding-left: 1rem;
+  }
+
+  .footer__helpline {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    padding-left: 1rem;
+  }
 }
