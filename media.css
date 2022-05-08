@@ -309,7 +309,7 @@
     grid-template-columns:
       minmax(0.5rem, 10rem) minmax(14rem, 28rem) minmax(18rem, 28rem)
       minmax(0.5rem, 10rem);
-    grid-template-rows: 5rem 21rem 20rem;
+    grid-template-rows: 5rem 24rem 23rem;
   }
 
   .problems__image {
