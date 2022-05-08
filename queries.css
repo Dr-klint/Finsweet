@@ -337,6 +337,7 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+    padding-left: 2rem;
   }
 
   .testimonial__1,
@@ -413,6 +414,11 @@
 }
 
 @media only screen and (max-width: 31.25em) {
+  html,
+  body {
+    font-size: 80%;
+  }
+
   .navigation__button {
     height: 3.5rem;
     width: 3.5rem;
@@ -465,12 +471,14 @@
   .image__paragraph {
     margin-left: 1rem;
     padding: 0.3rem;
+    font-size: 1rem;
   }
 
   .image__rating {
     margin-left: 1rem;
     padding: 0.3rem;
     margin-top: 0.5rem;
+    font-size: 1rem;
   }
 
   .section__1 {
@@ -493,7 +501,7 @@
 
   .section__2 {
     grid-template-columns: minmax(0.5rem, 12rem) 20rem minmax(0.5rem, 12rem);
-    grid-template-rows: 4rem 17rem 25rem;
+    grid-template-rows: 4rem 17rem 29rem;
   }
 
   .section__3 {
@@ -519,15 +527,16 @@
 
   .section__4 {
     display: grid;
-    grid-template-rows: 22rem min-content min-content;
-    grid-template-columns: 2rem 16rem 5rem 6rem;
+    grid-template-rows: 22rem max-content max-content;
+    grid-template-columns: 5rem 16rem 11rem 9rem;
   }
 
   .cars__experience {
     grid-column: 1/-1;
     grid-row: 2/-1;
     margin-left: -1rem;
-    justify-content: stretch;
+    justify-content: start;
+    padding-left: 6rem;
   }
 
   .review__heading,
@@ -552,13 +561,16 @@
   .section__6 {
     background-color: #f2f2f2;
     display: grid;
-    grid-template-rows: 15rem 28rem 6rem 4rem;
+    grid-template-rows: 18rem 31rem 7rem 4rem;
     grid-template-columns: minmax(0.1rem, 10rem) 38rem minmax(0.1rem, 10rem);
   }
-
   .testimonial__line {
-    margin-left: 1rem;
+    margin-left: 2rem;
     padding-right: 5rem;
+  }
+
+  .testimonial__line img {
+    width: 6rem;
   }
 
   .testimonial__right2 {
@@ -566,7 +578,7 @@
   }
 
   .testimonial__carousel {
-    margin-top: 4.5rem;
+    margin-top: -3.5rem;
   }
 
   .section__7 {
