@@ -7,12 +7,7 @@
 body,
 html {
   overflow-x: hidden;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 8rem 25rem 12rem 20rem 12rem;
-  grid-template-rows: 5rem 5rem 27rem 2rem;
+  width: 100%;
 }
 
 .navigation {
@@ -58,11 +53,14 @@ html {
   top: 0;
   left: 0;
   z-index: 2000;
-
   opacity: 0;
   width: 0%;
   visibility: hidden;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .navigation__list {
@@ -73,6 +71,10 @@ html {
   list-style: none;
   text-align: center;
   width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 .navigation__item {
@@ -208,6 +210,15 @@ html {
   align-items: center;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: minmax(0.5rem, 8rem) 25rem 12rem 20rem minmax(
+      0.5rem,
+      12rem
+    );
+  grid-template-rows: 5rem 5rem 27rem 2rem;
+}
+
 .finsweet__heading {
   margin-right: auto;
   font-size: 1.2rem;
@@ -258,6 +269,8 @@ html {
   height: 90%;
   width: 120%;
   background-size: cover;
+  filter: brightness(0.5);
+  -webkit-filter: brightness(0.5);
 }
 
 .cars__background {
@@ -296,15 +309,13 @@ html {
   padding: 0.6rem;
   color: white;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
 }
 
 .diagnostics {
   display: grid;
-  grid-template-columns: 8rem 28rem 28rem 8rem;
+  grid-template-columns:
+    minmax(0.1rem, 8rem) minmax(20rem, 28rem) minmax(20rem, 28rem)
+    minmax(0.1rem, 8rem);
   grid-template-rows: 6rem 30rem 3rem;
   grid-gap: 2rem;
   background-color: #f5f5f5;
@@ -432,7 +443,9 @@ html {
 
 .work {
   display: grid;
-  grid-template-columns: 10rem 28rem 28rem 10rem;
+  grid-template-columns:
+    minmax(0.5rem, 10rem) minmax(20rem, 28rem) minmax(20rem, 28rem)
+    minmax(0.5rem, 10rem);
   grid-template-rows: 6rem 16rem;
 }
 
@@ -480,7 +493,9 @@ html {
 
 .problems {
   display: grid;
-  grid-template-columns: 10rem 28rem 28rem 10rem;
+  grid-template-columns:
+    minmax(0.5rem, 10rem) minmax(20rem, 28rem) minmax(20rem, 28rem)
+    minmax(0.5rem, 10rem);
   grid-template-rows: 6rem 30rem;
 }
 
@@ -530,9 +545,10 @@ html {
   -o-border-radius: 10px;
 }
 
+/* ///NEW SECTIONS// */
 .footer {
   display: grid;
-  grid-template-columns: 9rem 30rem 30rem 9rem;
+  grid-template-columns: minmax(0.5rem, 9rem) 30rem 30rem minmax(0.5rem, 9rem);
   grid-template-rows: 6rem 18rem 6rem;
   grid-column-gap: 2rem;
   background-color: rgb(25, 25, 25);

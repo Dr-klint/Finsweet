@@ -7,6 +7,7 @@
 body,
 html {
   overflow-x: hidden;
+  width: 100%;
 }
 
 .container {
@@ -136,6 +137,10 @@ html {
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80);
+  -webkit-transform: scale(80);
+  -moz-transform: scale(80);
+  -ms-transform: scale(80);
+  -o-transform: scale(80);
 }
 
 .navigation__checkbox:checked ~ .navigation__nav {
