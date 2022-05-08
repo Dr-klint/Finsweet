@@ -487,6 +487,7 @@
         12rem
       );
     grid-template-rows: 4rem 1rem 32rem 27rem 2rem;
+    grid-column-gap: 4rem;
   }
 
   .heading__2 {
@@ -562,8 +563,9 @@
     background-color: #f2f2f2;
     display: grid;
     grid-template-rows: 18rem 31rem 7rem 4rem;
-    grid-template-columns: minmax(0.1rem, 10rem) 50rem minmax(0.1rem, 10rem);
+    grid-template-columns: minmax(0.1rem, 10rem) 54rem minmax(0.1rem, 10rem);
   }
+
   .testimonial__line {
     margin-left: 2rem;
     padding-right: 5rem;
